@@ -9,13 +9,13 @@ func main() {
 	fmt.Println("sort nums:", nums)
 }
 
-func BubbleSorter(nums []int) {
+func BubbleSorter(elements []int) {
 	isSwapped := true
 	for isSwapped {
 		isSwapped = false
-		for i := 1; i < len(nums); i++ {
-			if nums[i-1] > nums[i] {
-				nums[i-1], nums[i] = nums[i], nums[i-1]
+		for i := 1; i < len(elements); i++ {
+			if elements[i-1] > elements[i] {
+				elements[i-1], elements[i] = elements[i], elements[i-1]
 				isSwapped = true
 			}
 		}
