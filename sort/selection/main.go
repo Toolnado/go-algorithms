@@ -15,7 +15,6 @@ func SelectionSorter(elements []int) {
 		for j := i + 1; j <= len(elements)-1; j++ {
 			if elements[j] < elements[min] {
 				min = j
-
 			}
 		}
 		elements[min], elements[i] = elements[i], elements[min]
